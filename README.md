@@ -19,7 +19,7 @@ This project runs entirely in Python. To get started:
 
 ```bash
 git clone https://github.com/omardtl24/Mag_Isol_Numerical.git
-cd your-repo
+cd Mag_Isol_Numerical/
 ```
 
 2. Create and activate a virtual environment:
