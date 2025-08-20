@@ -1,6 +1,7 @@
 import numpy as np
 
 cubic_poly = lambda k,b,u : u**3 + k*u**2 + u + b
+delta = lambda k,b : 18*k*b + k**2 - 4 - 4*k**3*b - 27*b**2
 
 def u_values(k, b):
     """
