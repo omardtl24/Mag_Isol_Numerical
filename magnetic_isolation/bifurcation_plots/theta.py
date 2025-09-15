@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from ..utils import normalize_label
 
 def theta_plot_fixed_k(df,k = 0,klabel = None, mark_point = None, save = None):
     """
@@ -51,7 +52,7 @@ def theta_plot_fixed_k(df,k = 0,klabel = None, mark_point = None, save = None):
 
         plt.tight_layout()
         if save is not None:
-            plt.savefig(save+f'/ThetaDiagram_KValue{klabel}_fixed2D.png')
+            plt.savefig(save+f'/ThetaDiagram_KValue_{normalize_label(klabel)}_fixed2D.png')
         plt.show()
     except Exception as e:
         print(f'Plot Error: {e}')
@@ -109,7 +110,7 @@ def theta_plot_fixed_b(df,b = 0,blabel = None, mark_point = None , save = None):
 
         plt.tight_layout()
         if save is not None:
-            plt.savefig(save+f'/ThetaDiagram_BetaValue{blabel}_fixed2D.png')
+            plt.savefig(save+f'/ThetaDiagram_BetaValue_{normalize_label(blabel)}_fixed2D.png')
         plt.show()
     except Exception as e:
         print(f'Plot Error: {e}')
@@ -174,7 +175,7 @@ def theta_plot_kb_3d(df, id=None, mark_point_real=None, mark_point_complex=None,
 
         plt.tight_layout()
         if save is not None:
-            plt.savefig(save + f'/ThetaDiagram_KB_{id}_fixed3D.png')
+            plt.savefig(save + f'/ThetaDiagram_KB_{normalize_label(id)}_fixed3D.png')
         plt.show()
 
     except Exception as e:

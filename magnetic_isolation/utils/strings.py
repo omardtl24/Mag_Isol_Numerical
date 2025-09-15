@@ -1,0 +1,2 @@
+def normalize_label(txt):
+    return txt.replace('\\', '_').replace('{', '_').replace('}', '_').replace(' ', '').replace('^', '_power_').replace('/', '_').replace('(', '').replace(')', '').replace('.', '_dot_').replace('-', '_minus_')

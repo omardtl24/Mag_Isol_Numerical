@@ -10,3 +10,6 @@ __pycache__/
 
 # Python environment
 **/venv
+
+# Plot outputs
+**/Plots_saved/
